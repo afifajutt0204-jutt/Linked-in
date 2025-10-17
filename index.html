@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkedIn Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-2 bg-white shadow-sm">
+
+    <!-- Logo -->
+    <div class="h-6 flex items-center space-x-3 text-xl font-bold text-blue-700">
+      Linked<img class="h-6" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo" class="w-8 h-8">
+    </div>
+
+    <!-- Center Links with Icons -->
+    <div class="hidden md:flex items-center space-x-4 text-gray-700 text-sm">
+      <!-- Articles -->
+      <button class="flex flex-col items-center hover:text-blue-700">
+        <i data-feather="file-text" class="mb-1 w-5 h-5"></i>
+        <p>Articles</p>
+      </button>
+
+      <!-- People -->
+      <button class="flex flex-col items-center hover:text-blue-700">
+        <i data-feather="users" class="mb-1 w-5 h-5"></i>
+        <p>People</p>
+      </button>
+
+      <!-- Learning -->
+      <button class="flex flex-col items-center hover:text-blue-700">
+        <i data-feather="book-open" class="mb-1 w-5 h-5"></i>
+        <p>Learning</p>
+      </button>
+
+      <!-- Jobs -->
+      <button class="flex flex-col items-center hover:text-blue-700">
+        <i data-feather="briefcase" class="mb-1 w-5 h-5"></i>
+        <p>Jobs</p>
+      </button>
+
+      <!-- Games -->
+      <button class="flex flex-col items-center hover:text-blue-700">
+        <i data-feather="target" class="mb-1 w-5 h-5"></i>
+        <p>Games</p>
+      </button>
+
+      <!-- Get the App with 2 vertical lines -->
+      <div class="flex items-center space-x-3">
+        <div class="h-8 w-0.5 bg-gray-300"></div>
+        <button class="flex flex-col items-center hover:text-blue-700">
+          <i data-feather="smartphone" class="mb-1 w-5 h-5"></i>
+          <p>Get the App</p>
+        </button>
+        <div class="h-8 w-0.5 bg-gray-300"></div>
+      </div>
+
+      <div class="flex items-center space-x-2">
+      <button class="px-3 py-1 border border-gray-400 rounded-full text-gray-800 bg-white hover:bg-gray-100 text-sm">
+        Sign in
+      </button>
+      <button class="px-3 py-1 rounded-full text-white bg-blue-600 hover:bg-blue-700 text-sm">
+        Join now
+      </button>
+    </div>
+    </div>
+
+    <!-- Right side buttons -->
+    <div class="flex items-center space-x-2">
+      
+    </div>
+  </nav>
+
+  <section class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 md:px-16">
+
+    <!-- Left Content -->
+    <div class="w-full md:w-1/2 items-center space-y-6 text-center md:text-left">
+      <!-- Heading -->
+      <h1 class="text-4xl md:text-5xl font-algerian text-gray-800 leading-tight">
+        Welcome to your <br> professional community
+      </h1>
+
+      <!-- Buttons -->
+      <div class="space-y-3  max-w-sm mx-auto md:mx-0">
+        <!-- Google Button -->
+        <button class="w-full flex items-center justify-center space-x-2 border border-gray-400 rounded-full py-2 bg-blue-600 transition">
+          <img src="https://media.wired.com/photos/5926ffe47034dc5f91bed4e8/master/pass/google-logo.jpg" alt="Google" class="w-15 h-5 rounded-full">
+          <span class="text-gray-700 font-medium">Continue with Google</span>
+        </button>
+
+        <!-- Microsoft Button -->
+        <button class="w-full flex items-center justify-center space-x-2 border border-gray-400 rounded-full py-2 hover:bg-gray-100 transition">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" class="w-5 h-5">
+          <span class="text-gray-700 font-medium">Continue with Microsoft</span>
+        </button>
+
+        <!-- Email Button -->
+        <button class="w-full flex items-center justify-center space-x-2 border border-gray-400 rounded-full py-2 hover:bg-gray-100 transition">
+          <i data-feather="mail" class="w-5 h-5"></i>
+          <span class="text-gray-700 font-medium">Sign in with Email</span>
+        </button>
+      </div>
+
+      <!-- Agreement Text -->
+      <p class="text-xs  text-gray-500 mt-4 max-w-sm mx-auto md:mx-0">
+        By clicking to join or sign in, you agree to LinkedIn’s 
+        <a href="#" class="text-blue-600 hover:underline">User Agreement</a>, 
+        <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a> and 
+        <a href="#" class="text-blue-600 hover:underline">Cookie Policy</a>.
+      </p>
+
+      <!-- Join Now -->
+      <p class="text-md text-gray-600 mt-2">
+        New to LinkedIn? 
+        <a href="#" class="text-blue-600 font-semibold hover:underline">Join now</a>
+      </p>
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="w-full  md:w-1/2 flex justify-center mt-10 md:mt-0">
+      <img src="https://thumbs.dreamstime.com/b/illustration-person-sitting-floor-using-laptop-surrounding-them-symbols-representing-global-connectivity-education-372601531.jpg" 
+           alt="Student" 
+           class="rounded-full w-full h-full object-cover shadow-md">
+    </div>
+  </section>
+  <section class="bg-gray-100 py-12 px-8 md:px-16">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+
+    <!-- Left Side: Text Content -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">
+        Explore collaborative articles
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        We are unlocking community knowledge in a new way. Experts add insights directly into each article, started with the help of AI.
+      </p>
+    </div>
+
+    <!-- Right Side: Buttons -->
+    <div class="md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <button class="text-xl bg-gray-200 text-black py-2 border-black rounded-full hover:bg-gray-300">Marketing</button>
+      <button class="bg-gray-200 text-black px-2 py-2 border-black rounded-full hover:bg-gray-300">Public Administration</button>
+      <button class="bg-gray-200 text-black px-2 py-2 border-black rounded-full hover:bg-gray-300">Healthcare</button>
+      <button class="bg-gray-200 text-black px-2 py-2 border-black rounded-full hover:bg-gray-300">Engineering</button>
+      <button class="bg-gray-200 text-black px-2 py-2 border-black rounded-full hover:bg-gray-300">IT Services</button>
+      <button class="bg-gray-200 text-black px-2 py-1 border-black rounded-full hover:bg-gray-300">Sustainability</button>
+      <button class="bg-gray-200 text-black px-2 py-2 border-black rounded-full hover:bg-gray-300">Business Administration</button>
+      <button class="bg-gray-200 text-black px-2 py-2 border-black rounded-full hover:bg-gray-300">Telecommunication</button>
+      <button class="bg-gray-200 text-black px-3 py-2 border-black rounded-full hover:bg-gray-300">HR Management</button>
+      <button class="bg-white-700 text-blue px-2 py-2 border-black rounded-full hover:bg-blue-300">Show All</button>
+    </div>
+ 
+  </div>
+</section>
+<section class="bg-white py-12 px-8 md:px-16">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+
+    <!-- Left Side: Heading -->
+    <div class="md:w-1/2">
+      <h2 class="text-3xl font-bold text-gray-800">
+        Find the right job or internship for you.
+      </h2>
+    </div>
+
+    <!-- Right Side: Buttons -->
+    <div class="md:w-1/2 flex flex-wrap gap-4 justify-center md:justify-end">
+      <button class="bg-white text-black border border-black px-3 py-2 rounded-full hover:bg-gray-100">
+        Engineering
+      </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+        Business Development
+      </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+        Finance
+      </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+        Assistant
+      </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+            retail address 
+            </button>
+     <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+            Customer Services
+            </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+            Operations
+            </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+            IT
+            </button>
+      <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+            Marketing
+            </button>
+     <button class="bg-white text-black border border-black px-5 py-2 rounded-full hover:bg-gray-100">
+            Human Resources
+            </button>
+     <button class="bg-white text-black border border-blue-500 px-5 py-2 rounded-full hover:bg-gray-50 flex items-center gap-2">
+  Show More
+  <span class="text-blue-500 text-lg">→</span>
+</button>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-gray-200 text-center py-16">
+  <h2 class="text-2xl font-semibold text-red-600 mb-4">
+    Post your job for millions of people to see
+  </h2>
+  <button class="bg-gray-200 text-blue-700 border border-blue-500 px-6 py-2 rounded-full hover:bg-gray-100">
+    Post a Job
+  </button>
+</section>
+
+<section class="bg-white py-16 px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+  <!-- Left Side -->
+  <div class="md:w-1/2 text-left">
+    <h2 class="text-2xl font-semibold mb-3 text-black">
+      Discover the best software tools
+    </h2>
+    <p class="text-gray-700">
+      Connect with buyers who have first-hand experience to find the best products for you.
+    </p>
+  </div>
+
+  <!-- Right Side -->
+  <div class="md:w-1/2 grid grid-cols-2 gap-3">
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">E-commerce Platforms</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">CRM Software</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">Human Resources Management systems</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">Recruiting sysytems</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">sales intelligence systems</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">project management systems</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">Help desk software</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">social networking systems</button>
+    <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">Desktop publishing software</button>
+    <button class="bg-white text-blue-700 border border-blue-700 px-2 py-2 rounded-full hover:bg-gray-100">Show All</button>
+  </div>
+</section>
+
+<section class="bg-white py-16 px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+  <!-- Left Side -->
+  <div class="md:w-1/2 text-left">
+    <h2 class="text-2xl font-semibold mb-3 text-black">
+      Keep your mind sharp with games.
+    </h2>
+    <p class="text-gray-700">
+      Take a break and reconnect with your network through quick daily games.
+    </p>
+  </div>
+
+  <!-- Right Side -->
+  <div class="md:w-1/2 grid grid-cols-2 gap-3">
+    
+  <button class="bg-white text-black border border-black px-2 py-2 text-sm rounded-full hover:bg-gray-100">Pinpoint</button>
+  <button class="bg-white text-black border border-black px-2 py-2 text-sm rounded-full hover:bg-gray-100">Queens</button>
+  <button class="bg-white text-black border border-black px-2 py-2 text-sm rounded-full hover:bg-gray-100">Crossclimb</button>
+  <button class="bg-white text-black border border-black px-2 py-2 text-sm rounded-full hover:bg-gray-100">Tango</button>
+  <button class="bg-white text-black border border-black px-2 py-2 text-sm rounded-full hover:bg-gray-100">Zip</button>
+  <button class="bg-white text-black border border-black px-2 py-2 text-sm rounded-full hover:bg-gray-100">Mini Sudoku</button>
+</div>
+</section>
+
+<section class="bg-gray-200 py-16 px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+  <!-- Left Side -->
+  <div class="md:w-1/2 text-left">
+    <h2 class="text-2xl font-semibold mb-3 text-red-600">
+      Let the right people know you're open to work.
+    </h2>
+    <p class="text-gray-700">
+      With the Open to Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.
+    </p>
+  </div>
+
+  <!-- Right Side (Image) -->
+  <div class="md:w-1/2 flex justify-center">
+    <img src="https://strapi-wasabi-bucket-prod-cdn.phot.ai/Highlight_You_in_Your_Linkied_In_Profile_Picture_1a2aa5a12f.webp" 
+         alt="LinkedIn Logo" 
+         class="w-70 h-80 rounded-full border border-gray-400 shadow-md">
+  </div>
+</section>
+
+<section class="bg-white text-black py-16 px-10">
+  <div class="grid md:grid-cols-2 gap-10 items-center text-center">
+    
+    <!-- First Card -->
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" 
+           alt="Connect with People" 
+           class="w-60 h-60 mx-auto mb-4">
+      <h3 class="text-xl font-semibold mb-2">Connect with people who can help</h3>
+      <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100">
+        Find people you know
+      </button>
+    </div>
+
+    <!-- Second Card -->
+    <div>
+      <img src="https://previews.123rf.com/images/robuart/robuart1411/robuart141100265/33733489-man-working-with-laptop-on-table-flat-design-cartoon-style.jpg" 
+           alt="Learn Skills" 
+           class="w-60 h-60 mx-auto mb-4">
+      <h3 class="text-xl font-semibold mb-2">Learn the skills you need to succeed</h3>
+      
+      <!-- Button with dropdown -->
+      <div class="inline-block relative">
+        <button class="bg-white text-black border border-black px-4 py-2 rounded-full hover:bg-gray-100 flex items-center gap-2">
+          Choose a topic to learn about
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <!-- Dropdown -->
+        <ul class="absolute left-0 mt-2 w-56 bg-white border border-gray-300 rounded-lg shadow-lg hidden group-hover:block">
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Web Development</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Graphic Design</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Marketing</li>
+          <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">Data Analysis</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white py-16 px-10 flex flex-col md:flex-row items-center justify-between gap-10">
+  <!-- Left Side (Gray Box) -->
+  <div class="md:w-1/2 bg-gray-200 p-8 rounded-2xl shadow-md text-center md:text-left">
+    <h2 class="text-2xl font-semibold text-red-600 mb-3">
+      Who is LinkedIn for?
+    </h2>
+    <p class="text-gray-700 mb-6">
+      Anyone looking to navigate their professional life.
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex flex-col gap-3">
+      <button class="bg-white text-black border border-black px-4 py-2 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100">
+        Find a coworker or classmate 
+        <span class="text-lg">→</span>
+      </button>
+
+      <button class="bg-white text-black border border-black px-4 py-2 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100">
+        Find a new job 
+        <span class="text-lg">→</span>
+      </button>
+
+      <button class="bg-white text-black border border-black px-4 py-2 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100">
+        Find a course or training 
+        <span class="text-lg">→</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Right Side (Image) -->
+  <div class="md:w-1/2 flex justify-center">
+    <img 
+      src="https://images.pexels.com/photos/8199141/pexels-photo-8199141.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" 
+      alt="Student" 
+      class="w-120 h-120 rounded-full border border-gray-400 shadow-md">
+  </div>
+</section>
+<section class="bg-white text-center py-16 px-6">
+  <!-- Heading -->
+  <h2 class="text-3xl font-semibold text-black mb-3">
+    Join your colleagues, classmates, and friends on LinkedIn.
+  </h2>
+
+  <!-- Button -->
+  <button class="bg-blue-600 text-white px-6 py-2 mt-4 rounded-full hover:bg-blue-700 transition duration-300">
+    Get Started
+  </button>
+
+  <!-- Animated Image -->
+  <div class="mt-10">
+    <img 
+      src="https://as2.ftcdn.net/jpg/01/07/41/29/1000_F_107412997_M4cGs08FnfyZHDpyyo2vMeqEFOfTlXAx.jpg" 
+      alt="LinkedIn Animation" 
+      class="w-full h-96 object-cover rounded-2xl shadow-md">
+  </div>
+</section>
+
+<section class="bg-gray-200 text-black py-16 px-10">
+  <!-- Heading -->
+  <h2 class="text-3xl font-bold text-blue-600 mb-10 text-center">LinkedIn</h2>
+
+  <!-- Footer Columns -->
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+
+    <!-- Column 1 -->
+    <div>
+      <h3 class="font-semibold mb-3 text-lg">General</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Sign Up</a></li>
+        <li><a href="#" class="hover:underline">Help Center</a></li>
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Pages</a></li>
+        <li><a href="#" class="hover:underline">Blogs</a></li>
+        <li><a href="#" class="hover:underline">Careers</a></li>
+        <li><a href="#" class="hover:underline">Developers</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <h3 class="font-semibold mb-3 text-lg">Browse LinkedIn</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Learning</a></li>
+        <li><a href="#" class="hover:underline">Jobs</a></li>
+        <li><a href="#" class="hover:underline">Salary</a></li>
+        <li><a href="#" class="hover:underline">Mobile</a></li>
+        <li><a href="#" class="hover:underline">Services</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div>
+      <h3 class="font-semibold mb-3 text-lg">Business Solutions</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Talent</a></li>
+        <li><a href="#" class="hover:underline">Marketing</a></li>
+        <li><a href="#" class="hover:underline">Sales</a></li>
+        <li><a href="#" class="hover:underline">Learning</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div>
+      <h3 class="font-semibold mb-3 text-lg">Directories</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Members</a></li>
+        <li><a href="#" class="hover:underline">Jobs</a></li>
+        <li><a href="#" class="hover:underline">Companies</a></li>
+        <li><a href="#" class="hover:underline">Featured</a></li>
+        <li><a href="#" class="hover:underline">Learning</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+  <footer>
+
+  <!-- Bottom Section -->
+  <div class="mt-6 flex flex-col items-center justify-center text-sm text-gray-600 space-y-2">
+    <p>© 2025 LinkedIn Corporation. All rights reserved.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#" class="hover:underline">User Agreement</a>
+      <a href="#" class="hover:underline">Privacy Policy</a>
+      <a href="#" class="hover:underline">Cookie Policy</a>
+      <a href="#" class="hover:underline">Accessibility</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+  
+
+<script>
+    feather.replace();
+  </script>
+</body>
+</html>
